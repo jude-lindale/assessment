@@ -1,3 +1,8 @@
+useradd jude
+passwd jude
+firewall-cmd --permanent --add-port=22/tcp
+firewall-cmd --permanent --add-port=22/scdp
+firewall-cmd --reload
 cd /etc/pki/CA
 touch index.txt
 echo 1000 > serial
